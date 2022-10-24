@@ -6,9 +6,11 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:00:14 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/24 15:04:24 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/10/24 15:25:00 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isupper(int c)
 {

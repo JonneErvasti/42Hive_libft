@@ -6,9 +6,11 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 13:51:14 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/24 15:11:36 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/10/24 15:23:58 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*¬
 ** The·ft_isalpha()·function·tests·for·any·character·for·which·ft_isupper·or¬
