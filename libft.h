@@ -6,7 +6,7 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:53:51 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/24 15:12:43 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/10/24 21:13:44 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@
 
 //Part 1 - libc functions
 int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
 
 //Part 2 - Additional functions
 
