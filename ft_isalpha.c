@@ -1,27 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isalpha.c                                          :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 13:51:14 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/24 15:23:58 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:02:49 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*¬
-** The·ft_isalpha()·function·tests·for·any·character·for·which·ft_isupper·or¬
-**·ft_islower·is·true.·The·value·of·the·argument·must·be·representable·as·an¬
-**·unsigned·char·or·the·value·of·EOF.¬
-**¬
-**·The·ft_isalpha()·function·returns·zero·if·the·character·tests·false·and
-** returns·non-zero·if·the·character·tests·true.¬
-**¬
-**·→RISK:·FUNCTION·WILL·NOT·RETURN·THE·ARGUMENT!¬
-*/
 int	ft_isalpha(int c)
 {
 	if (ft_isupper(c) || ft_islower(c))

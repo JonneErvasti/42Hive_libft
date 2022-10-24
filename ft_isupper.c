@@ -6,7 +6,7 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:00:14 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/24 15:24:25 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/10/24 22:13:38 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isupper(int c)
 {
-	if (c > 'A' && c < 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (1);
 	return (0);
 }
