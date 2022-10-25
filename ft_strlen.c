@@ -6,11 +6,11 @@
 /*   By: jervasti <jonne.ervasti@student.hive.fi>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 21:32:05 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/25 21:43:09 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/10/25 21:52:30 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-include "libft.h"
+#include "libft.h"
 /*
 ** The ft_strlen() function calculates the length of the string pointed to by s,
 ** EXCLUDING the terminating null byte ('\0').
