@@ -6,15 +6,16 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:53:51 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/26 18:38:05 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/10/26 19:50:05 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-//Other allowed libraries for malloc
+//Other allowed libraries for malloc and write
 # include <stdlib.h>
+# include <unistd.h>
 
 //Part 1 - libc functions
 int		ft_isalpha(int c);
