@@ -6,7 +6,7 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:53:51 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/29 23:01:54 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/10/31 19:47:31 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,9 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *str);
+char	*ft_strdup(const char *src);
 //Part 2 - Additional functions
-
+char	*ft_itoa(int n);
 //Part 3 - Bonus functions
 
 //Part 4 - Own functions
