@@ -6,7 +6,7 @@
 #    By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:31:05 by jervasti          #+#    #+#              #
-#    Updated: 2022/11/02 21:00:48 by jervasti         ###   ########.fr        #
+#    Updated: 2022/11/02 21:29:03 by jervasti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,6 @@ SRC = ft_isalpha.c \
 		ft_strdup.c \
 		ft_itoa.c \
 		ft_substr.c \
-		ft_split.c \
 		ft_strjoin.c \
 
 CC = gcc
@@ -56,6 +55,11 @@ fclean: clean
 
 re: fclean all
 
+bonus:
+	echo "bonus"
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
+	gcc -nostartfiles -shared -o libft.so $(OBJ)
 
 #copy: possibility to choose a backup folder
 

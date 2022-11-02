@@ -6,7 +6,7 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:53:51 by jervasti          #+#    #+#             */
-/*   Updated: 2022/11/02 21:01:59 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/11/02 21:10:47 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strdup(const char *src);
 //Part 2 - Additional functions
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-char	**ft_split(char const *s, char c);
+//char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 //Part 3 - Bonus functions
 

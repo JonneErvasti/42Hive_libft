@@ -6,7 +6,7 @@
 /*   By: jervasti <jonne.ervasti@student.hive.fi>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/29 21:57:29 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/29 22:27:45 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/11/02 21:41:07 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (little[0] == '\0')
+	if (little[0] == '\0' || len == 0)
 		return ((char *)big);
 	while (big[i] != '\0' && i < len)
 	{
