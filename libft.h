@@ -6,7 +6,7 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:53:51 by jervasti          #+#    #+#             */
-/*   Updated: 2022/10/31 19:47:31 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/11/02 17:42:57 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ int		ft_atoi(const char *str);
 char	*ft_strdup(const char *src);
 //Part 2 - Additional functions
 char	*ft_itoa(int n);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 //Part 3 - Bonus functions
 
 //Part 4 - Own functions
