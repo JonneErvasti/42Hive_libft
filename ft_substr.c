@@ -6,7 +6,7 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 16:41:33 by jervasti          #+#    #+#             */
-/*   Updated: 2022/11/02 21:33:11 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/11/03 18:33:14 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,31 +16,24 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char		*sub;
 	size_t		i;
+	size_t		j;
 
 	i = 0;
-	sub = (char *)malloc(sizeof(char) * len);
+	j = 0;
+	if (!s)
+		return (NULL);
+	sub = (char *)malloc(sizeof(char) * len + 1);
 	if (!sub)
 		return (NULL);
-	if (ft_strlen(s) <= start)
-		return (NULL);
-	while (i < (unsigned int)len)
+	while (s[i])
 	{
-		sub[i] = s[start];
-		start++;
+		if (i >= start && j < len)
+		{
+			sub[j] = s[i];
+			j++;
+		}
 		i++;
 	}
-	sub[i] = '\0';
+	sub[j] = '\0';
 	return (sub);
 }
-/*
-int	main(void)
-{
-	char	*subi;
-	subi = ft_substr("jotaaaaaaaaaaain", 13, 4);
-	printf("sub = %s\n", subi);
-	subi = ft_substr("jotain", 1, 4);
-	printf("sub = %s\n", subi);
-	subi = ft_substr("jotain", 7, 4);
-	printf("sub = %s\n", subi);
-	return (0);
-}*/
