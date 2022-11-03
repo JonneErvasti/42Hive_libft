@@ -6,7 +6,7 @@
 #    By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:31:05 by jervasti          #+#    #+#              #
-#    Updated: 2022/11/02 21:29:03 by jervasti         ###   ########.fr        #
+#    Updated: 2022/11/03 22:23:48 by jervasti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRC = ft_isalpha.c \
 		ft_itoa.c \
 		ft_substr.c \
 		ft_strjoin.c \
+		ft_strtrim.c \
 
 CC = gcc
 
