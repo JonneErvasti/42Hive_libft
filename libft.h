@@ -6,7 +6,7 @@
 /*   By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 14:53:51 by jervasti          #+#    #+#             */
-/*   Updated: 2022/11/04 12:55:03 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/11/04 13:20:49 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *str);
+void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *src);
 //Part 2 - Additional functions
 char	*ft_substr(char const *s, unsigned int start, size_t len);
