@@ -6,7 +6,7 @@
 #    By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:31:05 by jervasti          #+#    #+#              #
-#    Updated: 2022/11/04 10:09:15 by jervasti         ###   ########.fr        #
+#    Updated: 2022/11/04 12:54:38 by jervasti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,8 @@ SRC = ft_isalpha.c \
 		ft_memmove.c \
 		ft_toupper.c \
 		ft_tolower.c \
+		ft_strchr.c \
+		ft_strrchr.c \
 		ft_strnstr.c \
 		ft_atoi.c \
 		ft_isspace.c \
