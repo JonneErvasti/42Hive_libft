@@ -6,7 +6,7 @@
 #    By: jervasti <jervasti@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 13:31:05 by jervasti          #+#    #+#              #
-#    Updated: 2022/11/10 22:27:26 by jervasti         ###   ########.fr        #
+#    Updated: 2022/11/26 17:40:31 by jervasti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRC = ft_isalpha.c \
 		ft_strrchr.c \
 		ft_strncmp.c \
 		ft_memchr.c \
+		ft_memcmp.c \
 		ft_strnstr.c \
 		ft_atoi.c \
 		ft_isspace.c \
@@ -50,11 +51,19 @@ SRC = ft_isalpha.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 
+BONUS = ft_lstnew.c \
+		ft_lstadd_front_bonus.c \
+		ft_lstsize_bonus.c \
+		ft_lstlast_bonus.c \
+		ft_lstadd_back_bonus.c \
+
 CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
 OBJ = $(SRC:.c=.o)
+
+BONUS_OBJ = $(BONUS:.c=.o)
 
 all: $(NAME)
 
@@ -70,8 +79,9 @@ fclean: clean
 
 re: fclean all
 
-bonus:
-	echo "bonus"
+bonus: $(OBJ) $(BONUS_OBJ)
+	ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
+	@echo "bonus done!"
 so:
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRC)
 	gcc -nostartfiles -shared -o libft.so $(OBJ)
